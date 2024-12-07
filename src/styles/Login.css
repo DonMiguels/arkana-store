@@ -1,0 +1,100 @@
+/* Estilo global para el formulario de login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Título del formulario */
+.login-container h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Estilo para los campos de entrada */
+.form-control {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    background-color: #fff;
+}
+
+/* Estilo para el botón de iniciar sesión */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link span {
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.register-link span:hover {
+    color: #0056b3;
+}
+
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .login-container h1 {
+        font-size: 24px;
+    }
+
+    .form-control {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+    }
+}
